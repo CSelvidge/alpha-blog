@@ -10,6 +10,120 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require bootstrap
  *= require_tree .
  *= require_self
  */
+body {
+    background-color: rgb(56,56,56);
+}
+
+
+/*
+            ===============
+                Text
+            ===============
+*/
+.medium-text{
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 479px) {
+    .medium-text {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .medium-text {
+        font-size: 5vh;
+    }
+}
+
+.large-text {
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 479px) {
+    .large-text {
+        font-size: 12vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .large-text {
+        font-size: 10vh;
+    }
+}
+
+/*
+            ===============
+                Columns
+            ===============
+*/
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .home-button {
+        width: 33.3%
+    }
+
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .home-text {
+        width: 66.66%;
+    }
+}
+
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .home-button,.home-text{
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+#home-image {
+    height: 50em;
+    width: 50em;
+}
+
+
+
+/*
+            ===============
+                Spacing
+            ===============
+*/
+
+.spacing {
+    height: 6em;
+}
+
+@media screen and (max-width: 479px) {
+    .spacing {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .spacing {
+        font-size: 0.5vh;
+    }
+}
+
+.spacing-half {
+    height: 3.7em;
+}
+
+@media screen and (max-width: 479px) {
+    .spacing-half {
+        font-size: 0.5vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .spacing-half {
+        font-size: 0.25vh;
+    }
+}
