@@ -1,0 +1,85 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.navbar {
+	background-color: black !important;
+}
+
+.nav-link {
+	color: white !important;
+}
+
+.navbar-toggler {
+	color: #fff !important;
+}
+
+.dropdown-menu {
+	color: white;
+}
+.dropdown-divider {
+	background-color: black;
+}
+
+#home-jumbo {
+	height: 750px;
+	background-image: asset-url("home-background.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+	#home-jumbo {
+		height: 80vh;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+	#home-jumbo {
+		height: 18em;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+	#sign-button {
+	    margin-top: 45%;
+	}
+}
+
+#logo {
+	float: left;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: -1px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#logo:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#home-container {
+	margin-top: 1.5em;
+}
+
+
+
+
+/*
+			===============
+				Footer
+			===============
+*/
+
+html, body {
+	height: 100%;
+}
+
+#page-content {
+	flex: 1 0 auto;
+}
+
+#sticky-footer {
+	flex-shrink: none;
+}
